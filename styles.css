@@ -46,7 +46,7 @@ max-width: 120rem;
 margin: 0 auto;
 }
 
-.boton{ /*esto es para el botno de conectar*/
+.boton{ /*esto es para el boton de conectar*/
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
@@ -292,3 +292,12 @@ footer{
     text-align: center;
 }
 
+.caja{
+    border:2px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: gray;
+
+
+}
