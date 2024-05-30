@@ -12,7 +12,7 @@ html{
 }
 
 *, *::before, *::after{
-    box-sizing: inherit;  /*se utiliza para acomodar tosos los bordes que hay, lo aplica para todo*/
+    box-sizing: inherit;  /*se utiliza para acomodar todos los bordes que hay, lo aplica para todo*/
 }
 
 body{
@@ -47,7 +47,7 @@ margin: 0 auto;
 }
 
 .boton{ /*esto es para el boton de conectar*/
-    background-color: var(--secundario);
+    background-color: rgb(81, 67, 67);
     color: var(--blanco);
     padding: 1rem 3rem;
     margin-top: 1rem;
@@ -82,7 +82,7 @@ margin: 0 auto;
 /*utilidades*/
 .w-100{
     width: 100%;
-}
+}-->
 @media (min-width:768px){
     .w-100 {
         width: auto;
@@ -96,7 +96,7 @@ margin: 0 auto;
 }
 
 .nav-bg{
-    background-color: var(--secundario); /*color de la barra*/
+    background-color: rgb(58, 52, 52); /*color de la barra*/
 }
 
 .navegacion-principal { /*esto es para darle espacio entre cada menu a lo largo*/
@@ -290,14 +290,17 @@ se adapte a todo tipo de pantallas*/
 
 footer{
     text-align: center;
+    background-color: #cac7c7;
 }
 
 .caja{
     border:2px solid black;
     padding: 10px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: gray;
+    font-weight: 600;
+   
 
 
 }
