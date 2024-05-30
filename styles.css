@@ -3,50 +3,58 @@
     --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #1C0E0C;
-    --gris:#757575;
+    --gris: #757575;
 
 }
-html{
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*, *::before, *::after{
-    box-sizing: inherit;  /*se utiliza para acomodar todos los bordes que hay, lo aplica para todo*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /*se utiliza para acomodar todos los bordes que hay, lo aplica para todo*/
 }
 
-body{
+body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     background-color: antiquewhite
-    
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 3.8rem;
     font-family: 'Krub', sans-serif;
-    
+
 
 }
 
-h2{
+h2 {
     font-size: 2.8rem;
 }
 
-h3{
+h3 {
     font-size: 1.8rem;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
-.contenedor { /*margen dimension de la barra*/
-max-width: 120rem;
-margin: 0 auto;
+.contenedor {
+    /*margen dimension de la barra*/
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
-.boton{ /*esto es para el boton de conectar*/
+.boton {
+    /*esto es para el boton de conectar*/
     background-color: rgb(81, 67, 67);
     color: var(--blanco);
     padding: 1rem 3rem;
@@ -61,138 +69,170 @@ margin: 0 auto;
     border: none;
 }
 
-.boton:hover { 
+.boton:hover {
     cursor: pointer;
 }
 
-@media (min-width:768px){  /*esto es para que se pueda ver en todo tipo de pantalla*/
-    .boton{
+@media (min-width:768px) {
+
+    /*esto es para que se pueda ver en todo tipo de pantalla*/
+    .boton {
         width: auto;
     }
 }
 
-.sombra{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(56,56,56,0.54);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(56,56,56,0.54);
-    box-shadow: 0px 5px 15px 0px rgba(56,56,56,0.54);
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(56, 56, 56, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(56, 56, 56, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(56, 56, 56, 0.54);
     background-color: antiquewhite;
     padding: 2rem;
-    border-radius: 1rem; /*todo este codigo es para la parte del medio que tiene sombra*/
+    border-radius: 1rem;
+    /*todo este codigo es para la parte del medio que tiene sombra*/
 }
+
 /*utilidades*/
-.w-100{
+.w-100 {
     width: 100%;
-}-->
-@media (min-width:768px){
+}
+
+-->@media (min-width:768px) {
     .w-100 {
         width: auto;
     }
 }
+
 .flex {
     display: flex;
 }
+
 .alinear-derecha {
     justify-content: flex-end;
 }
 
-.nav-bg{
-    background-color: rgb(58, 52, 52); /*color de la barra*/
+.nav-bg {
+    background-color: rgb(58, 52, 52);
+    /*color de la barra*/
 }
 
-.navegacion-principal { /*esto es para darle espacio entre cada menu a lo largo*/
-    
+.navegacion-principal {
+    /*esto es para darle espacio entre cada menu a lo largo*/
+
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /*es el estilo de espacio que hay entre cada opcion de la barra*/
+    justify-content: space-evenly;
+    /*es el estilo de espacio que hay entre cada opcion de la barra*/
 }
 
-@media (min-width: 768px) { /* esto es para darle forma para el navegador*/
-    .navegacion-principal{
+@media (min-width: 768px) {
+
+    /* esto es para darle forma para el navegador*/
+    .navegacion-principal {
         flex-direction: row;
     }
 }
 
-.navegacion-principal a{ /*esto es para los inicios barra inicio, sobre mi, etc*/
-color: var(--blanco);
-text-decoration: none;
-font-size: 2rem;
-font-weight: bold;
-padding: 1rem;
+.navegacion-principal a {
+    /*esto es para los inicios barra inicio, sobre mi, etc*/
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 
 }
 
-.navegacion-principal a:hover{ /*esto sirve para que se vea de color amarillo cuando se coloca el mause*/
+.navegacion-principal a:hover {
+    /*esto sirve para que se vea de color amarillo cuando se coloca el mause*/
     background-color: var(--primario);
     color: var(--oscuro);
- 
-}
-@media (min-width: 480) {
+
 }
 
-@media (min-width:768 ){
-    
-} 
+@media (min-width: 480) {}
+
+@media (min-width:768) {}
 
 .hero {
-    background-image: url(../img/hero.jpg);
-    background-repeat: no-repeat; /*es para que la imagen no se repita en varias partes a lo largo*/
-    background-size: cover; /*es para que se vea a lo ancho de la pantalla*/
+    background-image: url(img/opcion2.jpg);
+    background-repeat: no-repeat;
+    /*es para que la imagen no se repita en varias partes a lo largo*/
+    background-size: cover;
+    /*es para que se vea a lo ancho de la pantalla*/
     height: 450px;
     position: relative;
     margin-bottom: 2rem;
 }
 
-.contenido-hero{
+.contenido-hero {
     position: absolute;
-    background-color: rgba(0,0,0, .7);/*anterior*/
-    background-color:rgb(0 0 0 / 70%);/*esto es mas nuevo para definir las transparencias*/
+    background-color: rgba(0, 0, 0, .7);
+    /*anterior*/
+    background-color: rgb(0 0 0 / 70%);
+    /*esto es mas nuevo para definir las transparencias*/
     width: 100%;
     height: 100%;
 
-    display: flex;/*este codigo es ´para el contenido que esta dentro de la imagen*/
+    display: flex;
+    /*este codigo es ´para el contenido que esta dentro de la imagen*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    
-   
+
+
 }
 
 .contenido-hero h2,
-.contenido-hero p{
+.contenido-hero p {
     color: var(--blanco);
 }
 
-/*servicios*/ /*este contenido es para colocarlo en columnas a los servicios y el media es pára que 
+/*servicios*/
+/*este contenido es para colocarlo en columnas a los servicios y el media es pára que 
 se adapte a todo tipo de pantallas*/
 
-@media (min-width:768px){
-    
+@media (min-width:768px) {
 
-     .servicios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-   }
-} 
+
+    .servicios {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+    .ser{
+        font-size: 3.5rem;
+        padding:3%;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+     
+    }
+}
+
 
 .servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.servicio h3{
-    color:var(--secundario)
-    
 
+.servicio h3 {
+    color: var(--secundario);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold; /*grosor de la letra*/
+
+    
 }
 
 .servicio p {
     line-height: 2;
     text-align: center;
+    
 }
 
-.servicio .iconos{
+.servicio .iconos {
     height: 15rem;
     width: 15rem;
     background-color: var(--primario);
@@ -209,6 +249,7 @@ se adapte a todo tipo de pantallas*/
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
 .formulario legend {
     text-align: center;
     font-size: 1.2rem;
@@ -218,12 +259,14 @@ se adapte a todo tipo de pantallas*/
     text-transform: uppercase;
     font-weight: 700;
 }
+
 @media (min-width:768px) {
     .formulario {
         max-width: 800px;
         margin: 0 auto;
     }
 }
+
 .contenedor-campos {
     display: flex;
     justify-content: space-between;
@@ -234,28 +277,33 @@ se adapte a todo tipo de pantallas*/
     margin-bottom: 1rem;
     width: 100%;
 }
+
 @media (min-width:480px) {
     .campo {
         display: flex;
         align-items: center;
     }
 }
+
 @media (min-width: 768px) {
-    .campo{
+    .campo {
         flex: 0 0 calc(50% - .5rem)
     }
 }
+
 .campo label {
     color: var(--blanco);
     font-weight: 700;
     margin-bottom: .5rem;
     display: block;
 }
+
 @media (min-width:480px) {
     .campo label {
         flex: 0 0 90px;
     }
 }
+
 .campo input[type="text"],
 .campo input[type="tel"],
 .campo input[type="mail"],
@@ -265,20 +313,22 @@ se adapte a todo tipo de pantallas*/
     border: none;
     border-radius: .5rem;
 }
+
 @media (min-width: 768px) {
-    :is(.campo) :is( 
-        input[type="text"], 
-        input[type="text"],  
-        input[type="tel"],  
-        input[type="mail"] , 
-        textarea ) {
+
+    :is(.campo) :is(input[type="text"],
+        input[type="text"],
+        input[type="tel"],
+        input[type="mail"],
+        textarea) {
         flex: 1;
     }
 }
 
-.w-100{
+.w-100 {
     flex: 0 0 100%;
 }
+
 .campo textarea {
     height: 4rem;
 }
@@ -288,19 +338,73 @@ se adapte a todo tipo de pantallas*/
     justify-content: flex-end;
 }
 
-footer{
-    text-align: center;
-    background-color: #cac7c7;
-}
 
-.caja{
-    border:2px solid black;
+.caja {
+    border: 2px solid black;
     padding: 10px;
     margin: 20px;
     border-radius: 8px;
     background-color: gray;
     font-weight: 600;
+
+
+
+}
+
+/*sobre nosotros*/
+
+.campoPresentacion{
+    font-size: 120%;
+    text-align:justify;
+    background-color: #ded8d8;
+    padding: 20px;
+    border: 2px solid #1a0202; 
+    border-radius: 10px; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 20px; 
+    text-align: justify; 
+    font-family:cursive;
+
+  
    
 
+}
+.propioEstilo{
+    font-weight: bold;
+    font-size: 70%;
+ 
+}
 
+/*para los otros menu EN procesos*/
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Ancho de la tarjeta */
+    height: 150px; /* Altura de la tarjeta */
+    padding: 20px;
+    background-color: rgb(233, 15, 15);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(100%);
+    animation: aparecerYRegresar 20s forwards;
+}
+
+@keyframes aparecerYRegresar {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
 }

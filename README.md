@@ -1,0 +1,4 @@
+Comencé este proyecto hace aproximadamente un año, sin mucho conocimiento previo, solo siguiendo tutoriales en YouTube.
+Ahora, después de aprender más sobre cada función, entiendo mejor cada paso que doy.
+El propósito de esta página web es darle un uso laboral, aunque aún está en proceso. He tenido algunos problemas con el formulario, ya que no pude darle la forma exacta que quería teniendo en cuenta algunos pasos que ya habia hecho anteriormente, pero espero resolverlos mientras continúo con el curso.
+Para el diseño, decidí usar Bootstrap en el encabezado porque no encontré otras opciones que me gustaran tanto coloque un logo propio con el formato de letra que me dio bustrap. También estoy comentando algunas líneas de código para entender mejor cómo funciona. 
