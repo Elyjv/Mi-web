@@ -106,10 +106,6 @@ h3 {
     display: flex;
 }
 
-.alinear-derecha {
-    justify-content: flex-end;
-}
-
 .nav-bg {
     background-color: rgb(58, 52, 52);
     /*color de la barra*/
@@ -260,6 +256,13 @@ se adapte a todo tipo de pantallas*/
     font-weight: 700;
 }
 
+.alinear-derecha {
+    justify-content: center;
+    cursor: pointer;
+   
+
+}
+
 @media (min-width:768px) {
     .formulario {
         max-width: 800px;
@@ -333,10 +336,6 @@ se adapte a todo tipo de pantallas*/
     height: 4rem;
 }
 
-.enviar {
-    display: flex;
-    justify-content: flex-end;
-}
 
 
 .caja {
